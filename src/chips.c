@@ -2,6 +2,17 @@
 #include <stdint.h>
 struct edcl_chip_config g_edcl_chips[] = {
         {
+                .name = "K1879BM8YA",
+                .comment = "MC127.05",
+                .board_addr = "192.168.0.1",
+                .host_addr = "192.168.1.0",
+                .maxpayload = 456,
+                .local_port = 0x8088,
+                .remote_port = 0x9099,
+                .remote_mac ={ 0xec, 0x17, 0x66, 0x64, 0x08, 0x00 },
+                .endian = ENDIAN_LITTLE                        // 0 - little endian, 1 - big endian
+        },
+        {
                 .name = "K1879XB",
                 .comment = "MB77.07 & others",
                 .board_addr = "192.168.0.0",
